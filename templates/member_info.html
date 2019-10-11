@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Webpage Title -->
+  <title>당신의 서재-member info</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{{ url_for('static', filename='creative.css') }}" rel="stylesheet">
+  <link href="../static/creative.css" rel="stylesheet">
+
+  <!-- JS -->   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <script>
+  </script>
+
+</head>
+<body>
+  <header class="header-position">
+     <h1 class="text-uppercase font-weight-bold header-text">회원 정보 수정</h1>
+  </header>
+  <div class="form-wrap">
+    <div>
+        <img class="profile-photo-info" src="../static/img/portfolio/profile/user_profile_basic.png" alt="프로필 사진, profile photo"/>
+      </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <input id="user_id" type="email" class="form-control form-check-style" placeholder="아이디(별명)">
+        </div>
+        <div class="form-group col-md-4">
+          <button id="user_id_check" type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <input id="user_pw" type="password" class="form-control form-check-style" placeholder="비밀번호">
+      </div>
+      <div class="form-group">
+        <input id="user_pw_check" type="password" class="form-control form-check-style" placeholder="비밀번호 확인">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <input id="user_phone" type="email" class="form-control form-check-style" placeholder="휴대전화번호('-'제외)">
+        </div>
+        <div class="form-group col-md-4">
+          <button id="user_phone_check" type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <input id="user_phone_check_num" type="password" class="form-control form-check-style" placeholder="인증번호 입력">
+      </div>
+    </form>
+  <div class="submit-btn-center">
+    <button onclick="sign_up()" type="submit" class="btn btn-primary submit-btn-center">수정하기</button>
+  </div>
+</div>
+</body>
+</html>

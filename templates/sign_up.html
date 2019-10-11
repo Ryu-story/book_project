@@ -18,7 +18,8 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='creative.css') }}" rel="stylesheet">
+  <link href="../static/creative.css" rel="stylesheet">
 
   <!-- JS -->   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,64 +45,82 @@
           }
       })
   })
+
+  function sign_up() {
+    let user_email = $('#user_email').val();
+    let user_pw = $('#user_pw').val();
+    let user_id = $('#user_id').val();
+    let user_phone = $('#user_phone').val();
+    let user_birth = $('#user_birth').val();
+  
+
+    $.ajax({
+        type: "POST",
+        url: "/sign",
+        data: { user_email_give:user_email, user_pw_give:user_pw, user_id_give:user_id, user_phone_give:user_phone, user_birth_give:user_birth },
+        success: function(response){
+          alert('주문이 정상적으로 완료되었습니다.');
+          location.reload();
+        }
+      })
+
+    }
 </script>
 
 </head>
 <body>
-  <header class="">
-    <div class="header-position">
-      <h1 class="text-uppercase font-weight-bold header-text">회원 가입</h1>
-    </div>
+  <header class="header-position">
+     <h1 class="text-uppercase font-weight-bold header-text">회원 가입</h1>
   </header>
   <div class="form-wrap">
     <form>
       <div class="form-row">
         <div class="form-group col-md-8">
-          <input type="email" class="form-control form-check-style" placeholder="이메일 주소">
+          <input id="user_email" type="email" class="form-control form-check-style" placeholder="이메일 주소">
         </div>
         <div class="form-group col-md-4">
-          <button type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
+          <button id="user_email_check" type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
         </div>
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-check-style" placeholder="비밀번호">
+        <input id="user_pw" type="password" class="form-control form-check-style" placeholder="비밀번호">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-check-style" placeholder="비밀번호 확인">
+        <input id="user_pw_check" type="password" class="form-control form-check-style" placeholder="비밀번호 확인">
       </div>
       <div class="form-row">
         <div class="form-group col-md-8">
-          <input type="email" class="form-control form-check-style" placeholder="아이디(별명)">
+          <input id="user_id" type="email" class="form-control form-check-style" placeholder="아이디(별명)">
         </div>
         <div class="form-group col-md-4">
-          <button type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
+          <button id="user_id_check" type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-8">
-          <input type="email" class="form-control form-check-style" placeholder="휴대전화번호('-'제외)">
+          <input id="user_phone" type="email" class="form-control form-check-style" placeholder="휴대전화번호('-'제외)">
         </div>
         <div class="form-group col-md-4">
-          <button type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
+          <button id="user_phone_check" type="submit" class="btn btn-primary mb-2 btn-box">중복 확인</button>
         </div>
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-check-style" placeholder="인증번호 입력">
+        <input id="user_phone_check_num" type="password" class="form-control form-check-style" placeholder="인증번호 입력">
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <input type="password" class="form-control form-check-style" placeholder="생년월일(8자리 입력)">
+          <input id="user_birth" type="password" class="form-control form-check-style" placeholder="생년월일(8자리 입력)">
         </div>
         <div class="form-group col-md-3">
           <div class="form-centered">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="female">
+            <input id="user_gender_f" class="form-check-input" type="radio" name="inlineRadioOptions" value="female">
             <label class="form-check-label">여성</label>
           </div>
         </div>
         <div class="form-group col-md-3">
           <div class="form-centered">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="male">
-            <label class="form-check-label">남성</label>
+            <label id="user_gender_m" class="form-check-label">남성</label>
           </div>
         </div>
       </div>
@@ -133,7 +152,7 @@
       </div>
     </form>
   <div class="submit-btn-center">
-    <button type="submit" class="btn btn-primary submit-btn-center">Sign in</button>
+    <button onclick="sign_up()" type="submit" class="btn btn-primary submit-btn-center">회원가입</button>
   </div>
 </div>
 </body>
