@@ -9833,6 +9833,13 @@ header.masthead h1 {
   left: 0; top: 0;
 }
 
+.search-group {
+  width: 900px;
+  height: 6rem;
+  margin: 3rem auto 0 auto;
+  position: relative;
+}
+
 .search-photo {
   display: block;
   max-width: 32px;
@@ -9843,6 +9850,16 @@ header.masthead h1 {
   left: 0; bottom: 0;
 }
 
+.search-button {
+  display: block;
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+.search-button-size {
+  width: 180px;
+  height: 40px;
+}
 .form-check-style-none {
   border:none;
   border-right:0px; 
@@ -9860,20 +9877,13 @@ header.masthead h1 {
   left: 0; bottom: 0;
 }
 
-.search-group {
-  width: 900px;
-  height: 6rem;
-  margin: 3rem auto 0 auto;
-  position: relative;
-}
-
 .search-result-text {
   width: 900px;
   margin: 3rem auto 0 auto;
 }
 
 .search-size {
-  width: 50rem;
+  width: 40rem;
 }
 
 .subtitle {
@@ -10247,3 +10257,4 @@ img.plus-book-photo-75 {
 .btn-write-submit {
   width: 300px;
 }
+
