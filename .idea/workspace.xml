@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9bed753-9ea7-4b37-afa7-707de0789e5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/2. 개인프로젝트.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2. 개인프로젝트.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/creative.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/creative.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/search/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/portfolio/search/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/member_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/member_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bookapp">
+  <component name="RunManager" selected="Python.test">
     <configuration name="bookapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="2. 개인프로젝트" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,9 +108,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.bookapp" />
         <item itemvalue="Python.testbooklist" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>

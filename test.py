@@ -28,6 +28,8 @@ print('----')
 for book in dict['documents']:
     print(book['title'])
 
+print(response)
+
 '''
 for dict['documents'][0]['title'] in dict['documents']:
     print (dict_array[i]['title']['title'], dict_array[i]['title']['authors'])

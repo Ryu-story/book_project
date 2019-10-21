@@ -29,6 +29,14 @@
   <!-- 구글폰트 -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+  <script>
+    function booksearch(){
+      let url = $('#search-typing').val();
+      let book_title_give = $('#book-title').text('하이');
+      console.log(url+"안녕2")
+    }
+  </script>
 
 </head>
 
@@ -48,10 +56,10 @@
       <img class="search-photo" src="../static/img/portfolio/search/search.png" alt="검색 사진, search photo"/>
     </div>
     <div>
-      <input class="form-check-style-none search-size" type="search" placeholder="Search" aria-label="Search">
+      <input id="search-typing" class="form-check-style-none search-size" type="search" placeholder="Search" aria-label="Search">
     </div>
     <div class="search-button">
-      <button type="button" onclick="booksearch()" class="btn btn-outline-secondary search-button-size"><a href="/search/result">검색</a></button>
+      <button type="button" onclick="booksearch()" class="btn btn-outline-secondary search-button-size">검색</button>
     </div>
   </div>
 
@@ -65,7 +73,7 @@
   <div class="search-result-deck-container">
       <div class="search-result-deck-item">
         <img class="search-rseult-photo" src="../static/img/portfolio/book/book_ex.png" alt="검색 도서 결과, search result book"/>
-        <p class="search-result-title">책 제목</p>
+        <p id="book-title" class="search-result-title">책 제목</p>
         <P class="search-result-author">작가, 출판사, 출판년도</P>
         <button type="button" class="btn btn-outline-secondary btn-search-item-size">후기 작성</button>
         <button type="button" class="btn btn-outline-secondary btn-search-item-size">위시 리스트에 담기</button>
